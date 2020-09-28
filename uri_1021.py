@@ -21,9 +21,7 @@ m10 = resto // 0.10
 resto = round((resto % 0.10),2)
 m5 = resto // 0.05
 resto = round((resto % 0.05),2)
-m1 = resto // 0.01
-resto = round((resto % 0.01),2)
-m1a = resto // 0.01
+m1 = resto * 100
 
 print('NOTAS:')
 print(f'{n100:.0f} nota(s) de R$ 100,00')
@@ -38,4 +36,4 @@ print(f'{m50:.0f} moeda(s) de R$ 0.50')
 print(f'{m25:.0f} moeda(s) de R$ 0.25')
 print(f'{m10:.0f} moeda(s) de R$ 0.10')
 print(f'{m5:.0f} moeda(s) de R$ 0.05')
-print(f'{m1 + m1a:.0f} moeda(s) de R$ 0.01')
+print(f'{m1:.0f} moeda(s) de R$ 0.01')
